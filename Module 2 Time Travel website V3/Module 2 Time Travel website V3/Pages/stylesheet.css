@@ -1,0 +1,756 @@
+/*Google Fonts: Oswald*/
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+
+
+/*Google Fonts: Bebas Neue*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200&display=swap');
+
+
+/*website background colour*/
+body{
+    background-color: black;
+}
+
+/*Earth icon, top left*/
+.fa-solid{
+    color: black;
+ position: absolute;
+ padding:25px 30px 30px 20px;
+}
+
+.fa-solid:hover{
+    color:rgba(0,0,0,0.5);
+}
+  
+/*Navigation bar (top, white)*/
+
+nav{
+    background-color: white;
+    font-family: 'Oswald', sans-serif;
+    padding:3px 20px 1px 20px;
+    margin-top:-10px;
+}
+
+/*this was causing extra space on the right of the page*/
+/*Note: this was caused by position:relative;*/
+ul{
+   list-style: none;
+   margin-left:230px;
+   margin-bottom:2px;
+}
+
+li{
+    display: inline-block;
+    margin:0px 70px 10px 0px;  
+}
+
+a{
+    color:black;
+    text-decoration: none;
+}
+
+a:hover{
+   text-decoration:underline;
+}
+
+
+/*Scolling text bar animation*/
+.scroll-left {
+    height: 50px;	
+    overflow: hidden;
+    position: relative;
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(0, 0, 0);
+   }
+   .scroll-left p {
+    font-family: 'Oswald', sans-serif;
+    font-size:20px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    line-height: 50px;
+    text-align: center;
+    /* Starting position */
+    transform:translateX(100%);
+    /* Animation */
+    animation: scroll-left 20s linear infinite;
+   }
+   /* Movement of animation */
+   @keyframes scroll-left {
+    0%   {
+    transform: translateX(100%); 		
+    }
+    100% {
+    transform: translateX(-100%); 
+    }
+   }
+   
+
+/*Main part of website (Earth video & Heading)*/
+
+/*Changed to position:absolute as was causing overlap with video and scroll bar*/
+#Journey-title{
+    color: rgba(255, 255, 255,0.4);
+    font-family: 'Bebas Neue', cursive;
+    font-size: 95px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top:330px;
+    left:280px;
+   
+}
+
+#link-main{
+    color: white;
+    font-family:'Oswald', sans-serif;
+    font-size:20px;
+    position: absolute;
+    top:490px;
+    left:940px;
+
+}
+
+#link-main:hover{
+    text-decoration: underline;
+    opacity:0.8;
+}
+
+
+#Earth-video{
+    width:100%
+   
+
+}
+
+
+
+
+/*Boxes*/
+
+.boxes{
+    margin-bottom:-50px;
+}
+
+/*Far left box*/
+.box1{
+    background-color: white;
+    font-family:'Oswald', sans-serif;
+    width:25%;
+    height:400px;
+    position:relative;
+   display: inline-block;
+   bottom:60px;
+   left:60px;
+   
+   
+   
+ }
+
+/*Middle box*/
+.box2{
+    background-color: white;
+    font-family:'Oswald', sans-serif;
+    width:25%;
+    height:400px;
+    position:relative;
+    display: inline-block;
+    bottom:60px;
+    left:170px;
+ 
+    
+}
+
+/*Far right box*/
+.box3{
+    background-color: white;
+    font-family:'Oswald', sans-serif;
+    width:25%;
+    height:400px;
+    position:relative;
+    display: inline-block;
+    bottom:60px;
+    left:280px;  
+}
+
+.box-images{
+    width:90%;
+    padding:20px 20px 20px 20px;
+}
+
+.box-images:hover{
+    opacity:0.5;
+}
+
+/*Box headings*/
+h2{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 30px;
+    text-align: center;
+    margin-top:-20px;
+}
+
+.box-info{
+    margin:-20px 10px 10px 10px;
+    text-align: center;
+
+}
+
+.box-links{
+    font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   
+}
+
+.box-links:hover{
+    text-decoration: underline;
+}
+
+
+
+
+/*paragraph before footer*/
+#adventure{
+    color: white;
+    font-family:'Oswald', sans-serif;
+    text-align: center;
+    font-size: 20px;  
+   
+}
+
+
+/*Footer*/
+footer{
+    background-color: white;
+    padding:10px 0 50px 0px;
+}
+
+.footer-links{
+list-style: none;
+font-family:'Oswald', sans-serif;
+display: inline-block;
+margin:-20px 20px 20px 180px;
+}
+
+.footer-links:hover{
+    text-decoration: underline;
+}
+
+.disclaimer{
+    font-family:'Oswald', sans-serif;
+    text-align:left;
+    margin:0px 50px 0px 55px;
+    padding:0px 700px 0px 5px;
+    display: inline-block;
+    
+}
+
+.newsletter{
+ font-family:'Oswald', sans-serif;
+ padding:0px 150px 0px 40px;
+ text-align: right;
+ line-height:5px;
+ float:right;
+position:relative;
+bottom:80px;
+
+}
+
+/*Newsletter submit box*/
+input{
+   
+    width:80%;
+    height:20px;
+    letter-spacing:1px;
+    background-color: black;
+    border:20px;
+    border-radius:5px;
+    color:white;
+    padding:0px 0px 2px 10px;
+}
+
+button{
+    background-color: black;
+    color:white;
+    border-radius:5px;
+    border:none;   
+}
+
+button:hover{
+    opacity:0.5;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*PAST DESTINATIONS*/
+
+
+#Past-title{
+color: rgba(255, 255, 255);
+    font-family: 'Bebas Neue', cursive;
+    font-size: 95px;
+    position: absolute;
+    display: flex;
+    float:right;
+    text-align: right;
+    left:1050px;
+    top:100px;
+line-height:90px;
+width:20%;}
+
+#Past-imgmain{
+    width:100%;
+}
+
+#past-paragraph{
+    color: white;
+    font-family:'Oswald', sans-serif;
+    margin:35px 5px 0px 25px;
+    
+}
+
+#popdestinations{
+    color: white;
+    font-family:'Bebas Neue', cursive;
+    font-size: 35px;
+    margin:85px 5px 0px 25px;
+    text-align: left;
+}
+
+/*Carboniferous period image*/
+#popimg-1{
+   
+    width:20%;
+    height:20%;
+    border: 5px solid #ffffff ;
+    margin:10px 30px 0px 25px;
+    display:inline-block;
+ 
+}
+
+#popimg-1:hover{
+    opacity:0.7;
+}
+
+/*Cretaceous period image*/
+#popimg-2{
+    width:20%;
+    height:20%;
+    border: 5px solid #ffffff ;
+    margin:10px 30px 0px 25px;
+    display:inline-block;
+}
+
+#popimg-2:hover{
+    opacity:0.7;
+}
+
+/*Medieval England image*/
+#popimg-3{
+    width:20%;
+    height:20%;
+    border: 5px solid #ffffff ;
+    margin:10px 30px 0px 25px;
+    display:inline-block;
+}
+
+#popimg-3:hover{
+    opacity:0.7;
+}
+
+/*Toronto, 1964 image*/
+#popimg-4{
+    width:20%;
+    height:20%;
+    border: 5px solid #ffffff ;
+    margin:10px 30px 0px 25px;
+    display:inline-block;
+}
+
+#popimg-4:hover{
+    opacity:0.7;
+}
+
+/*Carboniferous period text*/
+   #destination-text1{
+     color: white;
+    font-family:'Oswald', sans-serif;
+    font-size: 35px;
+    font-weight:900;
+    position: absolute;
+    width:10%;
+    left:50px;
+   bottom:-500px;
+   }
+
+   /*Cretaceous period text*/
+   #destination-text2{
+    color: white;
+   font-family:'Oswald', sans-serif;
+   font-size: 35px;
+   font-weight:900;
+   position: absolute;
+   width:10%;
+   left:400px;
+  bottom:-500px;
+  }
+
+   /*Medieval England text*/
+  #destination-text3{
+    color: white;
+   font-family:'Oswald', sans-serif;
+   font-size: 35px;
+   font-weight:900;
+   position: absolute;
+   width:10%;
+   left:760px;
+  bottom:-500px;
+  }
+
+  /*Toronto,1964 text*/
+  #destination-text4{
+    color: white;
+   font-family:'Oswald', sans-serif;
+   font-size: 35px;
+   font-weight:900;
+   position: absolute;
+   width:10%;
+   left:1110px;
+  bottom:-500px;
+  }
+
+  /*20s,40s,60s boxes*/
+  .destination-box1{
+    background-color: white;
+    font-family:'Oswald', sans-serif;
+    width:25%;
+    height:370px;
+    position:relative;
+    display: inline-block;
+    top:60px;
+    left:30px;
+    margin:0px 0px 30px 0px;}
+
+    .destination-box2{
+        background-color: white;
+        font-family:'Oswald', sans-serif;
+        width:25%;
+        height:370px;
+        position:relative;
+        display: inline-block;
+        top:60px;
+        left:30px;
+        margin:0px 140px 30px 140px;}
+
+
+    .destination-box3{
+        background-color: white;
+        font-family:'Oswald', sans-serif;
+        width:25%;
+        height:370px;
+        position:relative;
+        display: inline-block;
+        top:60px;
+        left:30px;
+        margin:0px 0px 30px 0px;}
+
+    /*20s,40s,60s images*/
+    .destination-box-images{
+        width:97%;
+        padding:5px 5px 5px 5px;
+    }
+
+    .destination-box-images:hover{
+        opacity:0.5;
+    }
+
+      /*20s,40s,60s headings*/
+   #twenties{
+        font-size:30px;
+        font-family:'Bebas Neue', cursive;
+       position: absolute;
+       bottom:75px;
+       left:145px;
+    }
+
+  /*20s,40s,60s paragraphs*/  /*ALIGNMENT PROBLEM*/
+    #twenties-p{
+        position: absolute;
+        font-family:'Oswald', sans-serif;
+        font-size:16px;
+        margin:0px 5px 5px 5px;
+        padding:0px 5px 5px 5px;
+        line-height:20px;
+        font-weight: bold;
+        text-align: center;
+        bottom:55px;
+
+    }
+
+      /*20s,40s,60s links*/
+    #book-now1{
+        font-size: 25px;
+        font-weight: bold;
+        position: absolute;
+      /*color:#ffffff;*/
+   top:320px;
+   right:40px;
+    }
+
+    #book-now1:hover{
+        text-decoration: underline;
+    }
+
+    
+  /*Preparation & Planning box rectangle*/
+      #prep-plan{
+            width:93%;
+            height:310px;
+            border:7px solid #ffffff;
+            position: absolute;
+            margin:90px 35px 90px 25px;
+            top:1900px;
+
+        }
+
+        #prep-plan-heading{
+            color: #ffffff;
+            font-family:'Bebas Neue', cursive;
+            font-size:40px;
+            margin:70px 0px 0px 400px;
+        }
+
+        #prep-plan-text{
+            color: #ffffff;
+            font-family:'Oswald', sans-serif;
+            font-size:20px;
+            font-weight: bold;
+            width:45%;
+            text-align: center;
+            margin:5px;
+            position: absolute;
+            left:580px;
+        }
+
+        #Terms-link{
+            color:#ffffff;
+            font-family:'Oswald', sans-serif;
+            font-size:30px;
+            font-weight: bold;
+           position: absolute;
+           left:790px;
+           top:190px;
+
+        }
+
+
+        #prep-plan-image{
+            width:34.7%;
+            position: absolute;
+            bottom:0px;
+        }
+
+        #disclaimer-past{
+            color:white;
+            font-family:'Oswald', sans-serif;
+            font-weight: bold;
+            position: absolute;
+            top:2350px;
+            margin:0px 35px 35px 35px ;
+            padding:0px 0px 35px 0px;
+    
+        }
+      
+
+        /*Footer Past Destinations page*/
+
+        #footer2{
+            background-color: white;
+            padding:10px 0 50px 0px;
+            position: absolute;
+            top: 2450px; 
+            margin:0px 5px 0px 0px;
+          
+        }
+
+     
+
+
+
+
+
+
+
+
+
+        /*FUTURE DESTINATIONS*/
+
+        #future-title{
+            color: rgba(255, 255, 255);
+            font-family: 'Bebas Neue', cursive;
+            font-size: 95px;
+            position:absolute;
+            left:530px;
+            top:210px;
+                 
+        }
+
+         #Future-imgmain{
+            width:100%;
+         
+        }
+
+        #tomorrow{
+            color: rgba(255, 255, 255);
+            font-family: 'Bebas Neue', cursive;
+            font-size: 35px;
+            margin:0px 25px 0px 35px;
+            position: absolute;
+            top:740px;
+        }
+
+        #tomorrow-image{
+            width:50%;
+            float:right;
+            margin:35px 25px 25px 25px;
+        }
+
+        #tomorrow-info{
+            color:white;
+            font-family:'Oswald', sans-serif;
+            margin:150px 25px 25px 35px;
+            width:23%; 
+            font-weight: bold;
+        }
+           
+        #future-destinations{
+            color: rgba(255, 255, 255);
+            font-family: 'Bebas Neue', cursive;
+            font-size: 35px;
+            margin:250px 25px 0px 35px;
+        }
+        
+
+        /*Future destination box 1*/
+
+        #destination1{
+            background-color: white;
+            font-family:'Oswald', sans-serif;
+            width:45%;
+            height:650px;
+            position:relative;
+            display: inline-block;
+            left:25px;
+            margin:0px 0px 30px 0px;}
+
+
+             /*city images*/
+    .destinationimages{
+        width:95%;
+        padding:15px 15px 15px 15px;
+    }
+
+    .destinationimages:hover{
+        opacity:0.5;
+    }
+
+      /*city 1 and city 2 headings*/
+   #city-text{
+        font-size:30px;
+        font-family:'Bebas Neue', cursive;
+       position: absolute;
+       
+      
+    }
+
+  /*city 1 and 2 paragraphs*/  /*ALIGNMENT PROBLEM*/
+    #city-text-p{
+        position: absolute;
+        font-family:'Oswald', sans-serif;
+        font-size:16px;
+        line-height:20px;
+        font-weight: bold;
+        text-align: center;
+      
+
+    }
+
+      /*book now links*/
+    #book-now3{
+        font-size: 25px;
+        font-weight: bold;
+        position:absolute;
+    }
+
+    #book-now3:hover{
+        text-decoration: underline;
+    }
+
+    
+ /*Future destination box 2*/
+
+ #destination2{
+    background-color: white;
+    font-family:'Oswald', sans-serif;
+    width:45%;
+    height:650px;
+    position:relative;
+    display: inline-block;
+    left:100px;
+    margin:0px 0px 30px 0px;}
+
+
+/*city 1 and city 2 headings*/
+#city-text2{
+font-size:30px;
+font-family:'Bebas Neue', cursive;
+position: absolute;
+
+
+}
+
+/*city 1 and 2 paragraphs*/  /*ALIGNMENT PROBLEM*/
+#city-text-p2{
+position: absolute;
+font-family:'Oswald', sans-serif;
+font-size:16px;
+line-height:20px;
+font-weight: bold;
+text-align: center;
+
+}
+
+/*book now links*/
+#book-now4{
+font-size: 25px;
+font-weight: bold;
+position:absolute;
+}
+
+#book-now4:hover{
+text-decoration: underline;
+}
+
+
+
+#footer3{
+    background-color: white;
+    padding:10px 0 50px 0px;
+    position: absolute;
+    top: 2450px; 
+    margin:0px 5px 0px 0px;
+  
+}
